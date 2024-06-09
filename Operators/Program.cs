@@ -23,6 +23,11 @@ namespace Operators
             Console.WriteLine("Division: " + c);
             c = a % b;
             Console.WriteLine("Modulus: " + c);
+            c = 13 % 2;
+            Console.WriteLine("Modulus: " + c);
+            Console.WriteLine(1000 % 90); //1  
+            Console.WriteLine(71 % 10); //1
+
 
             // Relational Operators
             bool result = a == b;
