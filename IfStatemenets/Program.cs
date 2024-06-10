@@ -52,6 +52,21 @@ namespace IfStatemenets
                 Console.WriteLine("Incorrect");
             }
 
+            Console.Write("Enter a day of the week: ");
+            int day = Convert.ToInt32(Console.ReadLine());
+
+            switch (day)
+            {
+                case 1: Console.WriteLine("Monday");
+                    break;
+                case 2:
+                case 3: 
+                    Console.WriteLine("Tue");
+                    break;
+                default: Console.WriteLine("Not a valid day");
+                    break;
+            }
+
             Console.ReadLine();
         }
     }
