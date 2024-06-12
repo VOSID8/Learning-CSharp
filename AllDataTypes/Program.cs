@@ -19,22 +19,22 @@ namespace DataTypes
             Console.WriteLine(x + y);
 
             long a = 1000000000000000000L;
-            Console.WriteLine(long.MaxValue);
-            Console.WriteLine(long.MaxValue);
+            Console.WriteLine(long.MaxValue); //value: 9223372036854775807
+            Console.WriteLine(long.MaxValue); //value: -9223372036854775808
 
             double negative = -123.456;
             Console.WriteLine(negative);
-            Console.WriteLine(double.MaxValue);
-            Console.WriteLine(double.MinValue);
+            Console.WriteLine(double.MaxValue); //value: 1.7976931348623157E+308
+            Console.WriteLine(double.MinValue); //value: -1.7976931348623157E+308
 
             float precision = 123.456f;
             Console.WriteLine(precision);
-            Console.WriteLine(float.MinValue);
-            Console.WriteLine(float.MaxValue);
+            Console.WriteLine(float.MinValue); //value: -3.402823E+38
+            Console.WriteLine(float.MaxValue); //value: 3.402823E+38
 
             decimal money = 123.456m;
 
-            Console.WriteLine(money);
+            Console.WriteLine(money); 
 
             //string
             string name = "John Doe";
@@ -48,19 +48,19 @@ namespace DataTypes
 
             string textBigNumber = "12345";
             long bigNumber = Convert.ToInt64(textBigNumber);
-            Console.WriteLine(bigNumber);
+            Console.WriteLine(bigNumber); //value: 12345
 
             string textPrice = "-123.45";
             double price = Convert.ToDouble(textPrice);
-            Console.WriteLine(price);
+            Console.WriteLine(price);  //value: -123.45
 
-            string textPrecision = "123.45";
+            string textPrecision = "123.4555555555";
             float precision2 = Convert.ToSingle(textPrecision);
-            Console.WriteLine(precision2);
+            Console.WriteLine(precision2); //value: 123.4556
 
-            string textMoney = "123.45";
+            string textMoney = "-123.45";
             decimal money2 = Convert.ToDecimal(textMoney);
-            Console.WriteLine(money2);
+            Console.WriteLine(money2); //value: -123.45
 
             //boolean
 
