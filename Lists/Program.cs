@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,6 +25,21 @@ namespace Lists
             listNumbers.Add(3);
 
             listNumbers.Clear();
+
+            int num = 7;
+            int length = 5;
+
+            int[] result = new int[length];
+
+            for (int i = 0; i < length; i++)
+            {
+                result[i] = num*i;
+            }
+
+            foreach(var item in result)
+            {
+                Console.WriteLine(item);
+            }
 
             Console.ReadLine();
         }
